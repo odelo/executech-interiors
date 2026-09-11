@@ -1,11 +1,11 @@
 /* ==========================================================================
-   Executech Interiors — stylesheet
-   Brand blue is a CSS variable (--blue) — swap in the exact brand hex here.
+   Executech Interiors stylesheet.
+   Brand blue is a CSS variable (--blue). Swap in the exact brand hex here.
    ========================================================================== */
 
 :root {
-  --blue: #1c3a63;        /* placeholder brand blue — replace with exact brand hex */
-  --blue-deep: #10233d;
+  --blue: #123c5e;        /* matched from the logo; adjust if it needs to be exact */
+  --blue-deep: #0b2740;
   --blue-light: #6f93bd;
   --ink: #15181d;
   --paper: #f7f5f0;
@@ -130,12 +130,22 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .wordmark {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   line-height: 1;
   color: var(--paper);
   transition: color 0.35s ease;
 }
 .site-header.is-scrolled .wordmark { color: var(--ink); }
+.logomark {
+  width: 38px;
+  height: auto;
+  flex-shrink: 0;
+}
+.wordmark-text {
+  display: flex;
+  flex-direction: column;
+}
 .wordmark-main {
   font-family: var(--font-sans);
   font-weight: 600;
@@ -253,6 +263,14 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero .btn-ghost { color: var(--paper); }
 .hero .btn-ghost:hover { background: var(--paper); color: var(--ink); border-color: var(--paper); }
 
+.hero-trust {
+  margin-top: 30px;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(247, 245, 240, 0.55);
+}
+
 .scroll-cue {
   position: absolute;
   bottom: 34px;
@@ -287,6 +305,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero-content .reveal:nth-child(2) { transition-delay: 0.15s; }
 .hero-content .reveal:nth-child(3) { transition-delay: 0.25s; }
 .hero-content .reveal:nth-child(4) { transition-delay: 0.35s; }
+.hero-content .reveal:nth-child(5) { transition-delay: 0.45s; }
 
 /* ============ STUDIO ============ */
 .studio { padding: 130px 0; border-bottom: 1px solid var(--line); }

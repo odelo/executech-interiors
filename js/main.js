@@ -1,4 +1,4 @@
-// Executech Interiors — site interactions
+// Executech Interiors site interactions
 (function () {
   "use strict";
 
@@ -51,7 +51,7 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Contact form (front-end only — wire up to a form backend, see README)
+  // Contact form (front-end only; wire up to a form backend, see README)
   var form = document.getElementById("contact-form");
   var note = document.getElementById("form-note");
   if (form) {
